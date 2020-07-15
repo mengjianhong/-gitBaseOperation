@@ -1,0 +1,54 @@
+简易的命令行入门教程:
+
+一、下载git并配置git
+Git 全局设置:
+git config --global user.name "mengjianhong"
+git config --global user.email "448896003@qq.com"
+
+二、创建 git 仓库
+
+
+mkdir gitBaseOperation
+cd gitBaseOperation
+
+三、初始化git仓库
+git init
+
+四、建立一个文件并加入到git中
+touch README.md
+git add README.md
+
+五、将文件提交到仓库中
+git commit -m "first commit"
+
+
+六、本地文件和远程仓库进行关联
+git remote add gitee git@gitee.com:mengjianhong/gitBaseOperation.git
+
+七、将本地内容推送到远程仓库并进行关联
+git push -u gitee master
+
+
+
+八、拉去远程仓库的内容
+git pull gitee master
+
+九、克隆远程仓库的代码（可以是别人的）
+git clone git@gitee.com:jn9/cnki-wechat.git
+
+
+十、其他的一些git命令
+1.查看git的状态
+git status
+
+2.查看git文件发生的变化
+git diff
+
+3.回退
+git checkout --hard 版本号
+
+4.查看git的提交记录
+git log
+git log --pretyy=oneline
+
+git reflog
